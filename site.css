@@ -108,7 +108,6 @@ button { cursor: pointer; }
 .bc-soft { background: var(--bg-soft); }
 .bc-flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
 .bc-flow > div { padding: 22px; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 8px; }
-.bc-flow .t { font-size: 13px; font-weight: 700; color: var(--ink); }
 .bc-flow h3 { font-size: 17px; font-weight: 700; }
 .bc-flow p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--fg-soft); }
 
