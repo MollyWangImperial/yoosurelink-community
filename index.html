@@ -4,11 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>yoosurelink · 首页</title>
-<meta name="description" content="yoosurelink：一个国际化、全年龄的社群。活动站、圆桌，以及历史学博士生导师领读的读书会专栏。">
+<meta name="description" content="yoosurelink：一个国际化、全年龄的社群。活动站、圆桌，以及领读导师带领的女性主义读书会专栏。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
 <link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="bookclub.css">
 </head>
 <body>
 <section class="view" id="view-home" data-view="home" aria-label="首页" hidden>
@@ -17,7 +18,7 @@
 <!-- 顶部导航 -->
 <nav style="border-bottom: 1px solid #E3E8E7; background: #FFFFFF">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">yoosure<span style="color: rgb(15, 76, 92)">link</span></a>
+<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">Yoosure<span style="color: rgb(15, 76, 92)">link</span></a>
 <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 500">
 <a href="#events" style="color: #15202B; text-decoration: none">活动站</a>
 <a href="#bookclub" style="color: #15202B; text-decoration: none">读书会</a>
@@ -132,7 +133,7 @@
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px">
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #E3E8E7; border-radius: 14px"><span style="font-size: 18px; font-weight: 700">社交</span><span style="font-size: 13px; color: #5A6670">咖啡局 · 晚餐 · 城市漫步</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">线下为主</span></div>
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #E3E8E7; border-radius: 14px"><span style="font-size: 18px; font-weight: 700">人文</span><span style="font-size: 13px; color: #5A6670">讲座 · 展览 · 历史与哲学</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">线上 + 线下</span></div>
-<a href="#bookclub" style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1.5px solid #0F4C5C; border-radius: 14px; background: #EAF1F2; text-decoration: none; color: #15202B"><span style="font-size: 18px; font-weight: 700">读书会</span><span style="font-size: 13px; color: #5A6670">共读 · 作者对谈 · 书单交换</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">新专栏：历史博士生导师领读</span></a>
+<a href="#bookclub" style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1.5px solid #0F4C5C; border-radius: 14px; background: #EAF1F2; text-decoration: none; color: #15202B"><span style="font-size: 18px; font-weight: 700">读书会</span><span style="font-size: 13px; color: #5A6670">共读 · 作者对谈 · 书单交换</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">新专栏：从小妇人到今天</span></a>
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #E3E8E7; border-radius: 14px"><span style="font-size: 18px; font-weight: 700">语言交换</span><span style="font-size: 13px; color: #5A6670">中英 · 跨国语伴 · 口语桌</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">线上 + 线下</span></div>
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #E3E8E7; border-radius: 14px"><span style="font-size: 18px; font-weight: 700">职业与学术</span><span style="font-size: 13px; color: #5A6670">博士答疑 · 行业分享 · 申请经验</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">线上为主</span></div>
 <div style="display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #E3E8E7; border-radius: 14px"><span style="font-size: 18px; font-weight: 700">户外与运动</span><span style="font-size: 13px; color: #5A6670">徒步 · 骑行 · 晨跑团</span><span style="font-size: 12px; font-weight: 700; color: #0F4C5C">线下</span></div>
@@ -147,12 +148,12 @@
 <div style="max-width: 1200px; margin: 0 auto; padding: 64px 32px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
 <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #D98E1F">新专栏 · 读书会</span>
-<h2 style="margin: 0; font-size: 36px; font-weight: 900; letter-spacing: -0.5px">以史为镜，读懂当下</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A5560">历史专业博士生导师领读，一季八本书，每两周一次线上共读。第一季 12月5日开始，每期 20 个名额。</p>
+<h2 style="margin: 0; font-size: 36px; font-weight: 900; letter-spacing: -0.5px">读她，也读懂自己</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #4A5560">领读导师带你读十八本书、看十八部电影，从 1868 年读到 2021 年，每两周一场。在 150 年的女性故事里，认出今天的自己。</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 12px">
 <a href="#bookclub" style="min-height: 52px; padding: 0 28px; display: inline-flex; align-items: center; border-radius: 999px; background: #0F4C5C; color: #FFFFFF; font-size: 16px; font-weight: 700; text-decoration: none">查看专栏</a>
-<a href="#bc-syllabus" style="min-height: 52px; padding: 0 24px; display: inline-flex; align-items: center; border-radius: 999px; border: 1.5px solid #15202B; color: #15202B; font-size: 16px; font-weight: 500; text-decoration: none">看看书单</a>
+<a href="#bc-syllabus" style="min-height: 52px; padding: 0 24px; display: inline-flex; align-items: center; border-radius: 999px; border: 1.5px solid #15202B; color: #15202B; font-size: 16px; font-weight: 500; text-decoration: none">看看十八场书单</a>
 </div>
 </div>
 </section>
@@ -254,7 +255,7 @@
 
 <nav style="background: #FFFFFF; border-bottom: 1px solid #E3E8E7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">yoosure<span style="color: #0F4C5C">link</span></a>
+<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">Yoosure<span style="color: #0F4C5C">link</span></a>
 <span style="margin-left: auto; font-size: 14px; color: #5A6670">已有账号？<a href="#home" style="font-weight: 700">登录</a></span>
 </div>
 </nav>
@@ -381,7 +382,7 @@
 
 <nav style="border-bottom: 1px solid #E3E8E7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">yoosure<span style="color: #0F4C5C">link</span></a>
+<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">Yoosure<span style="color: #0F4C5C">link</span></a>
 <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 500">
 <a href="#foryou" style="color: #0F4C5C; text-decoration: none; border-bottom: 2px solid #0F4C5C; padding-bottom: 2px">为你推荐</a>
 <a href="#events" style="color: #15202B; text-decoration: none">活动站</a>
@@ -526,7 +527,7 @@
 
 <nav style="border-bottom: 1px solid #E3E8E7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">yoosure<span style="color: #0F4C5C">link</span></a>
+<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">Yoosure<span style="color: #0F4C5C">link</span></a>
 <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 500">
 <a href="#foryou" style="color: #15202B; text-decoration: none">为你推荐</a>
 <a href="#events" style="color: #0F4C5C; text-decoration: none; border-bottom: 2px solid #0F4C5C; padding-bottom: 2px">活动站</a>
@@ -769,7 +770,7 @@
 
 <nav style="border-bottom: 1px solid #E3E8E7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">yoosure<span style="color: #0F4C5C">link</span></a>
+<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">Yoosure<span style="color: #0F4C5C">link</span></a>
 <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 500">
 <a href="#foryou" style="color: #15202B; text-decoration: none">为你推荐</a>
 <a href="#events" style="color: #0F4C5C; text-decoration: none; border-bottom: 2px solid #0F4C5C; padding-bottom: 2px">活动站</a>
@@ -902,7 +903,7 @@
 
 <nav class="site-nav">
 <div class="site-nav-inner">
-<a href="#home" class="brand">yoosure<span>link</span></a>
+<a href="#home" class="brand">Yoosure<span>link</span></a>
 <div class="site-nav-links">
 <a href="#foryou">为你推荐</a>
 <a href="#events">活动站</a>
@@ -918,22 +919,23 @@
 <header class="bc-hero">
 <div class="wrap bc-hero-grid">
 <div class="bc-hero-copy">
-<span class="eyebrow">读书会专栏 · 历史</span>
-<h1>以史为镜，读懂当下</h1>
-<p class="lead">八部史学经典，一位历史学博士生导师，每两周一次线上研读。从一个人的命运、一桩事件的始末切入，看清制度如何运转、社会如何变迁，也看清历史如何塑造我们今天的处境。</p><div class="btn-row">
-<a href="#bc-syllabus" class="btn btn-ink btn-lg">浏览第一季书单</a>
+<span class="eyebrow">读书会专栏</span>
+<h1>读她，也读懂自己</h1>
+<p class="lead">十八本书，十八部电影，从 1868 年读到 2021 年。跟随领读导师，穿过 150 年里女性的出走、觉醒与当下。那些她们曾经面对的选择，也正是今天的我们在面对的。</p>
+<div class="btn-row">
+<a href="#bc-syllabus" class="btn btn-ink btn-lg">浏览十八场书单</a>
 <a href="#bc-mentor" class="btn btn-line btn-lg">了解领读导师</a>
 </div>
 </div>
 <div class="bc-shelf" aria-hidden="true">
-<span class="spine s1">历史是什么？</span>
-<span class="spine s2">万历十五年</span>
-<span class="spine s3">叫魂</span>
-<span class="spine s4">王氏之死</span>
-<span class="spine s5">奶酪与蛆虫</span>
-<span class="spine s6">乡土中国</span>
-<span class="spine s7">大分流</span>
-<span class="spine s8">枪炮、病菌与钢铁</span>
+<span class="spine s1" data-row="0">小妇人</span>
+<span class="spine s2" data-row="1">玩偶之家</span>
+<span class="spine s3" data-row="2">一间自己的房间</span>
+<span class="spine s4" data-row="3">呼兰河传</span>
+<span class="spine s5" data-row="8">使女的故事</span>
+<span class="spine s6" data-row="11">我的天才女友</span>
+<span class="spine s7" data-row="13">82年生的金智英</span>
+<span class="spine s8" data-row="17">始于极限</span>
 </div>
 </div>
 </header>
@@ -942,35 +944,35 @@
 <section class="wrap bc-block" id="bc-intro">
 <div class="bc-head">
 <span class="eyebrow">专栏介绍</span>
-<h2>把史学研讨课带出校园</h2>
-<p>历史读物从不稀缺，稀缺的是读法。同一本《万历十五年》，有人读出帝王轶事，有人读出一套制度如何塑造身处其中的每一个人；差别不在知识储备，而在提问的方式。本专栏由历史学博士生导师领读，把研究生研讨课的训练带给每一位认真的读者：辨析史料从何而来，追问作者在与谁对话，在证据之上形成自己的判断。读完一季，你带走的不只是八本书的内容，更是一种审视过去、理解当下的眼光。</p>
+<h2>她们的困境，我们并不陌生</h2>
+<p>1879 年，娜拉关上了家门；1929 年，伍尔夫说女性需要一间自己的房间；2016 年，金智英在育儿与职场之间，渐渐失去了自己的名字。一百五十年过去，问题换了样子，却从未真正消失。这个读书会按出版年代，把十八本书与十八部电影排成一条时间线，看清每一部作品诞生于怎样的时代，也看清今天困住我们、成全我们的究竟是什么。在这里，从自己的生活出发说的话，和引用理论一样有分量。</p>
 </div>
 <div class="bc-cards">
 <article class="bc-card">
-<h3>适合谁</h3>
+<h3>写给这样的你</h3>
 <ul>
-<li>喜欢历史，但没有系统读过史学著作的人</li>
-<li>想准备历史、社科方向申请或研究的学生</li>
-<li>想在工作之外，保持深度阅读习惯的职场人</li>
-<li>在海外生活、想用新的视角重读中国的人</li>
+<li>读过一些女性主义作品，想把零散的阅读连成脉络</li>
+<li>站在职业、婚姻与生育的选择之间，想听听更多女性的声音</li>
+<li>爱文学也爱电影，更想追问它们背后的时代</li>
+<li>想找到一群能认真聊、也愿意彼此倾听的同伴</li>
 </ul>
 </article>
 <article class="bc-card">
-<h3>你会得到什么</h3>
+<h3>你会带走什么</h3>
 <ul>
-<li>每本书一份导读讲义：背景、结构与关键概念</li>
-<li>导师现场答疑，问题可以提前提交</li>
-<li>一套可以带走的读史方法：看材料、问问题、找证据</li>
-<li>一群愿意认真读完一本书的同伴</li>
+<li>一份横跨 150 年的书单与片单，三幕十八场，环环相扣</li>
+<li>历史学视角的导读：作品为何诞生于那一年，又改变了什么</li>
+<li>每场一句话的“时代背景”，开场由主持人讲透语境</li>
+<li>每一幕结尾一场放映会，不用读书，只管尽兴</li>
 </ul>
 </article>
 <article class="bc-card">
 <h3>我们的约定</h3>
 <ul>
-<li>没读完也欢迎来，带着没读懂的地方更好</li>
-<li>讨论观点，不评判人；不同意见要有依据</li>
-<li>中文为主，英文提问同样欢迎</li>
-<li>回放仅供本季成员观看，请勿外传</li>
+<li>随时加入：每一场都独立成立，不必读过前面的书</li>
+<li>没读完也来：电影和书讲的是同一个主题</li>
+<li>可以不同意观点，但不评判别人的婚姻、职业或生育选择</li>
+<li>聊天内容不外传，成员的个人故事留在房间里</li>
 </ul>
 </article>
 </div>
@@ -987,122 +989,245 @@
 <div class="bc-mentor-id">
 <div class="bc-avatar">[导师照片]</div>
 <div class="bc-mentor-name">
-<span class="name">[导师姓名] 博士</span>
-<span class="role">[高校] 历史学系 · 博士生导师</span>
+<span class="name">[导师姓名]</span>
+<span class="role">领读导师</span>
 </div>
 <blockquote>“[导师寄语：一句想对读者说的话]”</blockquote>
 </div>
 <div class="bc-mentor-body">
 <dl class="bc-profile">
-<div><dt>学历</dt><dd>[博士毕业院校] 历史学博士</dd></div>
-<div><dt>现任</dt><dd>[高校] 历史学系 [职称] · 博士生导师</dd></div>
-<div><dt>研究方向</dt><dd>[研究方向，例如：明清社会史、中外交流史]</dd></div>
-<div><dt>教学经历</dt><dd>讲授 [课程名称] 等课程 [N] 年，指导硕士、博士研究生 [N] 名</dd></div>
+<div><dt>学历</dt><dd>[毕业院校与学位]</dd></div>
+<div><dt>现任</dt><dd>[任职单位与职务]</dd></div>
+<div><dt>研究方向</dt><dd>[研究方向，例如：近代妇女史、性别与社会史]</dd></div>
+<div><dt>教学经历</dt><dd>讲授 [课程名称] 等课程 [N] 年</dd></div>
 <div><dt>代表成果</dt><dd>[专著或论文名称]；[专著或论文名称]；[科研项目名称]</dd></div>
-<div><dt>授课语言</dt><dd>中文、English</dd></div>
+<div><dt>主持方式</dt><dd>每场由导师与一位成员轮流主持</dd></div>
 </dl>
 </div>
 </div>
 </div>
 </section>
 
-<!-- 分享内容 -->
+<!-- 研读书目 -->
 <section class="wrap bc-block" id="bc-syllabus">
 <div class="bc-head">
 <span class="eyebrow">研读书目</span>
-<h2>第一季：于细微处见历史</h2>
-<p>八本书构成一条循序渐进的路径：从史学方法入门，经由人物与事件的微观切口，走向社会结构与全球比较的宏观视野。每一期对应一种历史学家的思考方式，并附一道研讨问题。带着问题去读，收获会截然不同。</p>
+<h2>三幕十八场：150 年的女性故事</h2>
+<p>十八部作品按出版年代依次展开，从 1868 年一路读到 2021 年。每一本书都与一部电影对照，文字与影像彼此照见；每一幕终了，以一场放映会稍作停驻，回望来路。每场附一句“时代背景”，带你迅速走进作品诞生的那个年代。篇幅较长的《小妇人》《使女的故事》《我的天才女友》《你当像鸟飞往你的山》，都为你预留了提前开读的从容。</p>
 </div>
-<ol class="bc-syllabus">
-<li>
-<div class="bc-session-meta"><span class="no">第 1 期</span><span class="date">12月5日 周六 20:00</span></div>
-<div class="bc-session-main">
-<h3>《历史是什么？》</h3>
-<span class="author">E. H. 卡尔</span>
-<p>卡尔称历史是“现在与过去之间永无止境的对话”，这是阅读一切史学著作的起点。本期追问：史实如何被选择、被讲述，历史学家又如何受制于自己所处的时代。</p>
-<p class="q">研讨问题：当我们说“历史告诉我们”时，究竟是谁在说话？</p>
+<div class="bc-act" id="act-1">
+<span class="bc-act-no">第一幕</span>
+<div class="bc-act-text"><h3>出走</h3><span class="bc-act-span">1868–1944 · 第 1–6 场</span><p>女性第一次离开家、拿起笔。从四姐妹的阁楼到娜拉关上的家门，从伍尔夫的房间到萧红的小城，她们为自己争到了第一块立足之地。</p></div>
 </div>
-</li>
+<ol class="bc-syllabus" start="1">
 <li>
-<div class="bc-session-meta"><span class="no">第 2 期</span><span class="date">12月19日 周六 20:00</span></div>
+<div class="bc-session-meta"><span class="no">第 1 场</span><span class="date">1868 年</span></div>
 <div class="bc-session-main">
-<h3>《万历十五年》</h3>
-<span class="author">黄仁宇</span>
-<p>1587 年，表面上是无事可记的一年。黄仁宇借万历皇帝、首辅申时行、名将戚继光、清官海瑞与思想家李贽的命运，揭示一个以道德代替法制的帝国，如何让身处其中的每个人都无从施展。</p>
-<p class="q">研讨问题：当制度失灵，个人的才干与操守还能走多远？</p>
+<h3>四姐妹的选择</h3>
+<div class="bc-rw"><span><em>读</em>奥尔科特《小妇人》（小说，只读第一部）</span><span><em>看</em>《小妇人》（2019，格蕾塔·葛韦格）</span></div>
+<p>南北战争时期，父亲远赴战场，四姐妹在家中长大。女孩的出路，几乎只剩婚姻一条。</p>
+<p class="q">研讨问题：四姐妹里，你最像谁？艾米说婚姻是一桩“经济提议”，你同意吗？</p>
 </div>
 </li>
 <li>
-<div class="bc-session-meta"><span class="no">第 3 期</span><span class="date">1月2日 周六 20:00</span></div>
+<div class="bc-session-meta"><span class="no">第 2 场</span><span class="date">1879 年</span></div>
 <div class="bc-session-main">
-<h3>《叫魂：1768年中国妖术大恐慌》</h3>
-<span class="author">孔飞力</span>
-<p>1768 年，“剪辫叫魂”的流言席卷江南，乾隆帝借机整肃官僚。孔飞力从清宫档案中还原恐慌的蔓延，剖开专制皇权与官僚常规之间的深层张力。</p>
-<p class="q">研讨问题：一则流言，为何能动员起整个国家机器？</p>
+<h3>出走之后</h3>
+<div class="bc-rw"><span><em>读</em>易卜生《玩偶之家》（剧本）；鲁迅《娜拉走后怎样》（1923，演讲）</span><span><em>看</em>《出走的决心》（2024，尹丽川）</span></div>
+<p>娜拉关上家门的那一声，开启了现代女性的故事。五四一代视她为榜样，鲁迅却追问：走了以后呢？</p>
+<p class="q">研讨问题：娜拉和电影里开车离家的李红，面对的是同一个问题吗？鲁迅说最要紧的是经济权，今天依然如此吗？</p>
 </div>
 </li>
 <li>
-<div class="bc-session-meta"><span class="no">第 4 期</span><span class="date">1月16日 周六 20:00</span></div>
+<div class="bc-session-meta"><span class="no">第 3 场</span><span class="date">1929 年</span></div>
 <div class="bc-session-main">
-<h3>《王氏之死》</h3>
-<span class="author">史景迁</span>
-<p>史景迁以地方志、知县黄六鸿的官箴与蒲松龄的小说为材料，在地震、饥荒与匪患的背景下，拼合出清初郯城一位农妇出走与死亡的故事。</p>
-<p class="q">研讨问题：在史料沉默之处，历史学家的想象可以走多远？</p>
+<h3>一间自己的房间</h3>
+<div class="bc-rw"><span><em>读</em>伍尔夫《一间自己的房间》</span><span><em>看</em>《时时刻刻》（2002，史蒂芬·戴德利）</span></div>
+<p>1928 年，英国女性刚刚拿到与男性平等的投票权，却仍被挡在大学图书馆的门外。</p>
+<p class="q">研讨问题：你现在的“一间自己的房间”是什么？电影里三个时代的女性，各自缺的是哪一间？</p>
 </div>
 </li>
 <li>
-<div class="bc-session-meta"><span class="no">第 5 期</span><span class="date">1月30日 周六 20:00</span></div>
+<div class="bc-session-meta"><span class="no">第 4 场</span><span class="date">1940 年</span></div>
 <div class="bc-session-main">
-<h3>《奶酪与蛆虫》</h3>
-<span class="author">卡洛·金茨堡</span>
-<p>16 世纪弗留利的磨坊主梅诺基奥，因“宇宙如奶酪生蛆”之说受审。金茨堡借宗教裁判所的审讯记录，打开民间文化与精英思想相互渗透的一角，也为微观史树立了研究范式。</p>
-<p class="q">研讨问题：一个普通人的离经叛道，能折射出怎样的时代思想？</p>
+<h3>小城里的女人</h3>
+<div class="bc-rw"><span><em>读</em>萧红《呼兰河传》（小说）</span><span><em>看</em>《黄金时代》（2014，许鞍华）</span></div>
+<p>萧红在香港病中回望东北小城的童年，两年后病逝。她把一生最温柔也最锋利的笔，留给了家乡。</p>
+<p class="q">研讨问题：小团圆媳妇的故事里，伤害她的究竟是谁？书里的童年和电影里的萧红，哪一个更让你心疼？</p>
 </div>
 </li>
 <li>
-<div class="bc-session-meta"><span class="no">第 6 期</span><span class="date">2月20日 周六 20:00</span><span class="tag">春节后</span></div>
+<div class="bc-session-meta"><span class="no">第 5 场</span><span class="date">1942–1944 年</span></div>
 <div class="bc-session-main">
-<h3>《乡土中国》</h3>
-<span class="author">费孝通</span>
-<p>费孝通以差序格局、礼治秩序与长老统治等概念，勾勒出传统中国基层社会的运行逻辑。这些概念至今仍是理解中国社会最具解释力的工具之一。</p>
-<p class="q">研讨问题：差序格局的逻辑，在今天的城市与职场中是否依然有效？</p>
+<h3>红玫瑰与白玫瑰</h3>
+<div class="bc-rw"><span><em>读</em>张爱玲《红玫瑰与白玫瑰》（中篇小说）；丁玲《三八节有感》（短文）</span><span><em>看</em>《红玫瑰与白玫瑰》（1994，关锦鹏）</span></div>
+<p>同一段战争年代，延安的丁玲与沪上的张爱玲，各自写下了女性的处境。</p>
+<p class="q">研讨问题：“红玫瑰”与“白玫瑰”的分类，今天还存在吗？小说是振保的视角，换成娇蕊或烟鹂来讲，会是怎样的故事？</p>
 </div>
 </li>
 <li>
-<div class="bc-session-meta"><span class="no">第 7 期</span><span class="date">3月6日 周六 20:00</span></div>
+<div class="bc-session-meta"><span class="no">第 6 场</span><span class="date">放映会</span><span class="tag">放映会</span></div>
 <div class="bc-session-main">
-<h3>《大分流》</h3>
-<span class="author">彭慕兰</span>
-<p>直到 18 世纪，江南与英格兰在生活水平与市场发育上并无根本差距。彭慕兰提出，煤炭的地理分布与美洲殖民地的资源，才是东西方分道扬镳的关键。</p>
-<p class="q">研讨问题：比较两种文明时，如何避免先有结论、再找证据？</p>
-</div>
-</li>
-<li>
-<div class="bc-session-meta"><span class="no">第 8 期</span><span class="date">3月20日 周六 20:00</span></div>
-<div class="bc-session-main">
-<h3>《枪炮、病菌与钢铁》</h3>
-<span class="author">贾雷德·戴蒙德</span>
-<p>戴蒙德从农作物、驯化动物与大陆轴线出发，解释各大洲社会为何发展不均。本期既领略这一宏大叙事的解释力，也检视史学界对地理决定论的批评。</p>
-<p class="q">研讨问题：地理能解释多少历史？人的选择又在其中占据怎样的位置？</p>
+<h3>第一幕回顾</h3>
+<div class="bc-rw"><span><em>读</em>不用读书，各自带一句第一幕里最喜欢的话</span><span><em>看</em>《妇女参政论者》（2015，莎拉·加夫隆）</span></div>
+<p>1912 年的伦敦，一位洗衣女工被卷入争取投票权的运动，从此再也回不到原来的生活。</p>
+<p class="q">研讨问题：前五场的女主角里，谁最需要一张选票？你家里的长辈女性，有没有过属于她们的“出走”？</p>
 </div>
 </li>
 </ol>
-<p class="bc-footnote">时间均为北京时间。正式书目与日程将于开季前一周发布，如有调整，会提前告知已报名成员。</p>
+<div class="bc-act" id="act-2">
+<span class="bc-act-no">第二幕</span>
+<div class="bc-act-text"><h3>觉醒</h3><span class="bc-act-span">1963–2000 · 第 7–11 场</span><p>家庭、艺术与社会里那些“看不见”的女性。当生活什么都不缺却仍觉得空，她们开始为那个没有名字的问题命名。</p></div>
+</div>
+<ol class="bc-syllabus" start="7">
+<li>
+<div class="bc-session-meta"><span class="no">第 7 场</span><span class="date">1963 年</span></div>
+<div class="bc-session-main">
+<h3>没有名字的问题</h3>
+<div class="bc-rw"><span><em>读</em>贝蒂·弗里丹《女性的奥秘》第 1–2 章</span><span><em>看</em>《革命之路》（2008，萨姆·门德斯）</span></div>
+<p>战后的美国郊区，女性被要求回到家里，做“幸福的主妇”。</p>
+<p class="q">研讨问题：为什么生活什么都不缺，却仍觉得空？家务劳动的价值，怎样才能被看见？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 8 场</span><span class="date">1971 年</span></div>
+<div class="bc-session-main">
+<h3>被画的人与画画的人</h3>
+<div class="bc-rw"><span><em>读</em>琳达·诺克林《为什么没有伟大的女艺术家？》（长文）</span><span><em>看</em>《燃烧女子的肖像》（2019，瑟琳·席安玛）</span></div>
+<p>女性主义运动开始追问：博物馆和教科书里的女性，都去了哪里？</p>
+<p class="q">研讨问题：女性为什么大多在画里，而不是在画布前？你能说出几位女艺术家的名字？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 9 场</span><span class="date">1985 年</span></div>
+<div class="bc-session-main">
+<h3>如果倒退会怎样</h3>
+<div class="bc-rw"><span><em>读</em>阿特伍德《使女的故事》（小说）</span><span><em>看</em>《使女的故事》（2017，美剧）</span></div>
+<p>里根时代保守主义回潮，阿特伍德想象了一个女性只剩生育功能的国度。</p>
+<p class="q">研讨问题：书里有哪些设定，曾在现实中真实发生过？“妻子们”为什么也成了这套制度的维护者？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 10 场</span><span class="date">2000 年</span></div>
+<div class="bc-session-main">
+<h3>人人都需要女性主义</h3>
+<div class="bc-rw"><span><em>读</em>贝尔·胡克斯《激情的政治》</span><span><em>看</em>《芭比》（2023，格蕾塔·葛韦格）</span></div>
+<p>“女权”一词被污名化的年代，胡克斯用大白话重新解释它到底是什么。</p>
+<p class="q">研讨问题：男性也会被父权伤害吗？《芭比》里格洛丽亚那段独白，哪一句戳中了你？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 11 场</span><span class="date">放映会</span><span class="tag">放映会</span></div>
+<div class="bc-session-main">
+<h3>第二幕回顾</h3>
+<div class="bc-rw"><span><em>读</em>不用读书，各自带一句第二幕里最喜欢的话</span><span><em>看</em>《末路狂花》（1991，雷德利·斯科特）</span></div>
+<p>两个普通女人的一次周末旅行，变成了一场逃亡。</p>
+<p class="q">研讨问题：结尾算悲剧，还是自由？和第 2 场的娜拉、李红相比，她们走得更远了吗？</p>
+</div>
+</li>
+</ol>
+<div class="bc-act" id="act-3">
+<span class="bc-act-no">第三幕</span>
+<div class="bc-act-text"><h3>当下</h3><span class="bc-act-span">2011–2021 · 第 12–18 场</span><p>回到今天的我们。友谊与竞争、身体与数据、母亲与女儿，问题换了样子，追问还在继续。</p></div>
+</div>
+<ol class="bc-syllabus" start="12">
+<li>
+<div class="bc-session-meta"><span class="no">第 12 场</span><span class="date">2011 年</span></div>
+<div class="bc-session-main">
+<h3>女性之间的友谊</h3>
+<div class="bc-rw"><span><em>读</em>费兰特《我的天才女友》（小说）</span><span><em>看</em>《我的天才女友》（2018，剧集）</span></div>
+<p>二战后那不勒斯的贫民区，两个女孩，一个继续读书，一个早早离开了课堂。</p>
+<p class="q">研讨问题：莱农和莉拉是朋友还是对手？你的生命里，有没有这样一位“天才女友”？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 13 场</span><span class="date">2014 年</span></div>
+<div class="bc-session-main">
+<h3>不被相信的女性</h3>
+<div class="bc-rw"><span><em>读</em>丽贝卡·索尔尼特《爱说教的男人》（散文集）；阿迪契《我们都应该是女性主义者》</span><span><em>看</em>《坡道上的家》（2019，日剧）</span></div>
+<p>社交媒体时代，“男性说教”成了热词，女性主义重新走进大众视野。</p>
+<p class="q">研讨问题：你遇到过哪些被“说教”的时刻？剧中的新手妈妈，为什么越来越不敢相信自己？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 14 场</span><span class="date">2016 年</span></div>
+<div class="bc-session-main">
+<h3>一个普通女性</h3>
+<div class="bc-rw"><span><em>读</em>赵南柱《82年生的金智英》（小说）</span><span><em>看</em>《82年生的金智英》（2019，金度英）</span></div>
+<p>韩国“江南站事件”之后，这本书成了东亚女性共同的心事。</p>
+<p class="q">研讨问题：书和电影的结局有什么不同？金智英的哪一段经历，你也有过？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 15 场</span><span class="date">2018 年</span></div>
+<div class="bc-session-main">
+<h3>读书是一种出走</h3>
+<div class="bc-rw"><span><em>读</em>塔拉·韦斯特弗《你当像鸟飞往你的山》（回忆录）</span><span><em>看</em>《我的姐姐》（2021，殷若昕）</span></div>
+<p>在美国山区极端家庭长大的女孩，17 岁之前从未走进过教室。</p>
+<p class="q">研讨问题：教育给了塔拉什么，又让她失去了什么？电影里的姐姐，为什么那样坚持要走？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 16 场</span><span class="date">2019 年</span></div>
+<div class="bc-session-main">
+<h3>世界是按男性设计的</h3>
+<div class="bc-rw"><span><em>读</em>卡罗琳·克里亚多·佩雷斯《看不见的女性》第 1–5 章</span><span><em>看</em>《隐藏人物》（2016，西奥多·梅尔菲）</span></div>
+<p>大数据时代，女性在数据里依然“缺席”。</p>
+<p class="q">研讨问题：你的工作或家里，有哪些“默认是男性”的设计？女性的贡献，怎样才能被算进去？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 17 场</span><span class="date">2019 年</span></div>
+<div class="bc-session-main">
+<h3>身体是谁的</h3>
+<div class="bc-rw"><span><em>读</em>川上未映子《乳与卵》（小说，可只读第一部）</span><span><em>看</em>《热辣滚烫》（2024，贾玲）</span></div>
+<p>东京的三个女人，围绕丰胸手术、月经与生育展开争执。</p>
+<p class="q">研讨问题：你对自己身体的“不满意”，来自哪里？电影里的转变，是为了别人，还是为了自己？</p>
+</div>
+</li>
+<li>
+<div class="bc-session-meta"><span class="no">第 18 场</span><span class="date">2021 年</span><span class="tag">终场放映</span></div>
+<div class="bc-session-main">
+<h3>两代女性的对话</h3>
+<div class="bc-rw"><span><em>读</em>上野千鹤子、铃木凉美《始于极限》（书信集）</span><span><em>看</em>《好东西》（2024，邵艺辉）</span></div>
+<p>上野千鹤子在中文世界走红，年长与年轻的女性开始互相写信。</p>
+<p class="q">研讨问题：你和妈妈那一代最大的不同是什么？从《小妇人》到《好东西》，哪些问题已经解决，哪些还在？</p>
+</div>
+</li>
+</ol>
+<p class="bc-footnote">每两周一场，共 18 场，全程约 9 个月。另留春节、暑假前两次假期休息，具体时间在成员群里商定，可插在任意两场之间。年代为书的出版年。</p>
+
+<div class="bc-extra-wrap">
+<div class="bc-head bc-head-sm">
+<h3>备选书目与延伸阅读</h3>
+<p>对某本书兴趣不大时，可以换成下面的作品；也可以在主书单结束后，开启第二季。</p>
+</div>
+<div class="bc-extra">
+<div><span class="bc-extra-type">小说</span><strong>夏洛蒂·勃朗特《简·爱》（1847）</strong><span>第 1 场前，作为开场替代</span></div>
+<div><span class="bc-extra-type">小说</span><strong>托妮·莫里森《宠儿》（1987）</strong><span>第二幕，补上黑人女性的视角，较难读</span></div>
+<div><span class="bc-extra-type">小说</span><strong>王安忆《长恨歌》（1995）</strong><span>第二幕，补一本中文小说</span></div>
+<div><span class="bc-extra-type">小说</span><strong>玛格丽特·阿特伍德《猫眼》（1988）</strong><span>第 12 场，另一种女性友谊</span></div>
+<div><span class="bc-extra-type">进阶</span><strong>西蒙娜·德·波伏娃《第二性》（1949）导言</strong><span>第 6 场前后，给想读理论的成员</span></div>
+<div><span class="bc-extra-type">进阶</span><strong>Audre Lorde, Sister Outsider（1984）选篇</strong><span>第 10 场，与胡克斯对读</span></div>
+<div><span class="bc-extra-type">进阶</span><strong>上野千鹤子《厌女》（2010）</strong><span>第 18 场，读完书信集想深入的成员</span></div>
+<div><span class="bc-extra-type">进阶</span><strong>Sara Ahmed, Living a Feminist Life（2017）</strong><span>第二季开场</span></div>
+</div>
+</div>
 </section>
 
-<!-- 每期流程 -->
+<!-- 每场流程 -->
 <section class="bc-soft">
 <div class="wrap bc-block">
 <div class="bc-head">
-<span class="eyebrow">每期流程</span>
-<h2>导读、研讨与答疑</h2>
+<span class="eyebrow">每场流程</span>
+<h2>一场共读的节奏</h2>
 </div>
 <div class="bc-flow">
-<div><h3>研读准备</h3><p>领取导读讲义与本期研读范围，带着疑问进入文本；希望导师回应的问题，可提前在成员群提交。</p></div>
-<div><h3>导师导读</h3><p>梳理成书背景与全书脉络，厘清核心概念，并点明这本书在学术史上回应了什么、改变了什么。</p></div>
-<div><h3>小组研讨</h3><p>四到五人一组，围绕研讨问题交换读法与证据，再回到全体，让不同视角彼此碰撞。</p></div>
-<div><h3>答疑与延伸</h3><p>导师回应课前与现场的提问，指出值得继续追问的线索，并开列延伸书目。</p></div>
-<div><h3>回放与研读纪要</h3><p>发布完整回放与研讨纪要，沉淀每一期的思考；回放在本季结束后保留 30 天。</p></div>
+<div><h3>时代入场券</h3><p>每场附一句话的“时代背景”，开场由主持人讲透语境。没读过前面的书，也能立刻进入。</p></div>
+<div><h3>一句话，一个镜头</h3><p>开场十五分钟，每人分享书中最打动自己的一句话，或电影里最难忘的一个镜头。</p></div>
+<div><h3>围绕问题深谈</h3><p>六十分钟，围绕本场研讨问题展开讨论。没有标准答案，只有被认真倾听的观点。</p></div>
+<div><h3>回到自己的生活</h3><p>最后十五分钟，把书里的问题带回自己：它和我的工作、家庭与选择有什么关系？</p></div>
+<div><h3>每幕一场放映会</h3><p>每一幕结尾不用读书，线上线下一起看一部电影，各自带一句最喜欢的话来。</p></div>
 </div>
 </div>
 </section>
@@ -1119,36 +1244,46 @@
 <legend class="bc-legend">1. 报名方式</legend>
 <label class="bc-plan">
 <input type="radio" name="plan" value="single" data-price="69">
-<span class="plan-name">单期体验</span>
-<span class="plan-price">¥69<small> / 期</small></span>
-<span class="plan-desc">任选一期，先来感受一下。含该期讲义与回放。</span>
+<span class="plan-name">单场体验</span>
+<span class="plan-price">¥69<small> / 场</small></span>
+<span class="plan-desc">任选一场，含该场导读讲义。每一场都独立成立，随时可以加入。</span>
 </label>
 <label class="bc-plan is-featured">
 <span class="badge">推荐</span>
 <input type="radio" name="plan" value="season" data-price="399" checked>
-<span class="plan-name">整季 8 期</span>
-<span class="plan-price">¥399<small> / 季</small></span>
-<span class="plan-desc">比单期购买省 ¥153。含全部讲义、回放、讨论笔记与本季成员群。</span>
+<span class="plan-name">全程 18 场</span>
+<span class="plan-price">¥399<small> / 全程</small></span>
+<span class="plan-desc">比单场购买省 ¥843。含全部导读讲义、三场放映会与成员群，完整走过 150 年。</span>
 </label>
 <label class="bc-plan">
-<input type="radio" name="plan" value="member" data-price="319">
-<span class="plan-name">会员整季</span>
-<span class="plan-price">¥319<small> / 季</small></span>
-<span class="plan-desc">yoosurelink 常客或无限档会员专享，权益与整季相同。</span>
+<input type="radio" name="plan" value="member" data-price="499">
+<span class="plan-name">会员全程</span>
+<span class="plan-price">¥499<small> / 全程</small></span>
+<span class="plan-desc">yoosurelink 常客或无限档会员专享，权益与全程相同。</span>
 </label>
 </fieldset>
 
 <div class="bc-field" id="bc-session-field" hidden>
-<label for="bc-session">选择要参加的一期</label>
+<label for="bc-session">选择要参加的一场</label>
 <select id="bc-session" name="session">
-<option value="1">第 1 期 · 《历史是什么？》 · 12月5日</option>
-<option value="2">第 2 期 · 《万历十五年》 · 12月19日</option>
-<option value="3">第 3 期 · 《叫魂》 · 1月2日</option>
-<option value="4">第 4 期 · 《王氏之死》 · 1月16日</option>
-<option value="5">第 5 期 · 《奶酪与蛆虫》 · 1月30日</option>
-<option value="6">第 6 期 · 《乡土中国》 · 2月20日</option>
-<option value="7">第 7 期 · 《大分流》 · 3月6日</option>
-<option value="8">第 8 期 · 《枪炮、病菌与钢铁》 · 3月20日</option>
+<option value="1">第 1 场 · 《小妇人》</option>
+<option value="2">第 2 场 · 《玩偶之家》</option>
+<option value="3">第 3 场 · 《一间自己的房间》</option>
+<option value="4">第 4 场 · 《呼兰河传》</option>
+<option value="5">第 5 场 · 《红玫瑰与白玫瑰》</option>
+<option value="6">第 6 场 · 第一幕回顾放映会</option>
+<option value="7">第 7 场 · 《女性的奥秘》</option>
+<option value="8">第 8 场 · 《为什么没有伟大的女艺术家？》</option>
+<option value="9">第 9 场 · 《使女的故事》</option>
+<option value="10">第 10 场 · 《激情的政治》</option>
+<option value="11">第 11 场 · 第二幕回顾放映会</option>
+<option value="12">第 12 场 · 《我的天才女友》</option>
+<option value="13">第 13 场 · 《爱说教的男人》</option>
+<option value="14">第 14 场 · 《82年生的金智英》</option>
+<option value="15">第 15 场 · 《你当像鸟飞往你的山》</option>
+<option value="16">第 16 场 · 《看不见的女性》</option>
+<option value="17">第 17 场 · 《乳与卵》</option>
+<option value="18">第 18 场 · 《始于极限》</option>
 </select>
 </div>
 
@@ -1156,11 +1291,11 @@
 <legend class="bc-legend">2. 你的信息</legend>
 <div class="bc-grid2">
 <div class="bc-field"><label for="bc-name">称呼</label><input id="bc-name" name="name" type="text" autocomplete="name" required placeholder="怎么称呼你"></div>
-<div class="bc-field"><label for="bc-wechat">微信号</label><input id="bc-wechat" name="wechat" type="text" required placeholder="用于拉你进本季成员群"></div>
-<div class="bc-field"><label for="bc-email">邮箱</label><input id="bc-email" name="email" type="email" autocomplete="email" required placeholder="接收讲义与回放链接"></div>
+<div class="bc-field"><label for="bc-wechat">微信号</label><input id="bc-wechat" name="wechat" type="text" required placeholder="用于拉你进成员群"></div>
+<div class="bc-field"><label for="bc-email">邮箱</label><input id="bc-email" name="email" type="email" autocomplete="email" required placeholder="接收导读讲义与参会链接"></div>
 <div class="bc-field"><label for="bc-city">所在城市或时区</label><input id="bc-city" name="city" type="text" placeholder="例如：上海、伦敦、UTC+8"></div>
 </div>
-<div class="bc-field"><label for="bc-question">想问导师的问题（选填）</label><textarea id="bc-question" name="question" rows="3" placeholder="读书时卡住的地方、想了解的话题都可以写"></textarea></div>
+<div class="bc-field"><label for="bc-question">最想聊的一本书或一个话题（选填）</label><textarea id="bc-question" name="question" rows="3" placeholder="比如：婚姻与自由、母亲与女儿、身体与选择……"></textarea></div>
 </fieldset>
 
 <fieldset class="bc-fieldset">
@@ -1174,7 +1309,7 @@
 </fieldset>
 
 <div class="bc-summary">
-<div class="bc-total"><span>应付金额</span><strong id="bc-total">¥399</strong><span id="bc-total-note">整季 8 期</span></div>
+<div class="bc-total"><span>应付金额</span><strong id="bc-total">¥399</strong><span id="bc-total-note">全程 18 场</span></div>
 <label class="bc-agree"><input type="checkbox" id="bc-agree" required> 我已阅读并同意下方的退款与发票说明</label>
 <p class="bc-error" id="bc-error" role="alert" hidden></p>
 <button type="submit" class="btn btn-ink btn-lg">提交并去付款</button>
@@ -1185,10 +1320,10 @@
 <div>
 <h3>退款说明</h3>
 <ul>
-<li>开季前 48 小时以前申请，全额退款。</li>
-<li>开季后申请，按未开始的期数退款；已开始的期数不退。</li>
-<li>单期报名在该期开始前 24 小时以前可全额退款。</li>
-<li>如因导师原因取消某期，会顺延补上或按期退款。</li>
+<li>首场开始 48 小时以前申请，全额退款。</li>
+<li>开始后申请，按未开始的场次退款；已开始的场次不退。</li>
+<li>单场报名在该场开始 24 小时以前可全额退款。</li>
+<li>如因导师原因取消某场，会顺延补上或按场退款。</li>
 </ul>
 </div>
 <div>
@@ -1206,19 +1341,21 @@
 <section class="bc-soft">
 <div class="wrap bc-block bc-faq">
 <div class="bc-head"><span class="eyebrow">常见问题</span><h2>报名前你可能想知道</h2></div>
-<details><summary>没有历史专业背景，能跟上吗？</summary><p>可以。第一季正是为非专业读者设计的，导读部分会把背景知识讲清楚。只要愿意读、愿意说，就跟得上。</p></details>
-<details><summary>书要自己买吗？</summary><p>需要自己准备纸书或电子书。开季前我们会在成员群里列出推荐版本和可借阅渠道。</p></details>
-<details><summary>人在海外，有时差怎么办？</summary><p>每期都有回放和讨论笔记。你也可以把问题提前提交，导师会在现场回答，回放里能看到。</p></details>
-<details><summary>付款后多久能确认？</summary><p>微信与支付宝一般在 24 小时内确认；银行转账与海外支付需要 1 到 3 个工作日。确认后助教会通过微信拉你进本季成员群。</p></details>
-<details><summary>读书会和 yoosurelink 会员是什么关系？</summary><p>读书会专栏单独报名，不占用会员的每月活动场次。常客和无限档会员可以用会员价报名整季。</p></details>
-<details><summary>可以只旁听不发言吗？</summary><p>可以。分组讨论时可以只听，但我们鼓励每个人至少说一次，哪怕只是一个问题。</p></details>
+<details><summary>书没读完，也能来吗？</summary><p>能。电影和书讲的是同一个主题，只看了电影也能参与讨论。带着没读完的困惑来，往往聊得更深。</p></details>
+<details><summary>可以中途加入吗？</summary><p>随时可以。每一场都独立成立，不需要读过前面的书；每场一句话的“时代背景”就是入场券，主持人开场也会介绍语境。</p></details>
+<details><summary>书太厚，读不完怎么办？</summary><p>大多在 100 到 250 页之间，两周里每天读 15 到 20 页就够。较长的几本都紧跟放映会或假期，可以提前开始读。</p></details>
+<details><summary>不熟悉女性主义理论，会不会跟不上？</summary><p>不会。在这里，从自己的生活出发说的话，和引用理论一样有分量。想深入的成员，可以从备选书目里的进阶读物开始。</p></details>
+<details><summary>线上还是线下？</summary><p>普通场次在线上进行，电影各自在家看；每一幕的放映会线上线下一起看。</p></details>
+<details><summary>讨论会录像吗？</summary><p>不会。聊天内容不外传，成员分享的个人故事只留在房间里。每场会提供导读讲义，方便你课前准备与课后回味。</p></details>
+<details><summary>付款后多久能确认？</summary><p>微信与支付宝一般在 24 小时内确认；银行转账与海外支付需要 1 到 3 个工作日。确认后助教会通过微信拉你进成员群。</p></details>
+<details><summary>读书会和 yoosurelink 会员是什么关系？</summary><p>读书会专栏单独报名，不占用会员的每月活动场次。常客和无限档会员可以用会员价报名全程。</p></details>
 </div>
 </section>
 
 <footer class="bc-end">
 <div class="wrap bc-end-inner">
 <div>
-<span class="bc-end-title">第一季 12月5日开始，每期 20 个名额</span>
+<span class="bc-end-title">第一幕“出走”即将开场，每场 20 个名额</span>
 <span class="bc-end-sub">有任何问题，请添加读书会助教微信：[助教微信号]</span>
 </div>
 <a href="#bc-signup" class="btn btn-amber btn-lg">现在报名</a>
@@ -1258,7 +1395,7 @@
 
 <nav style="border-bottom: 1px solid #E3E8E7">
 <div style="max-width: 1200px; margin: 0 auto; padding: 0 32px; min-height: 72px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
-<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">yoosure<span style="color: #0F4C5C">link</span></a>
+<a href="#home" style="font-size: 22px; font-weight: 900; letter-spacing: -0.5px; color: #15202B; text-decoration: none">Yoosure<span style="color: #0F4C5C">link</span></a>
 <div style="display: flex; flex-wrap: wrap; gap: 24px; font-size: 15px; font-weight: 500">
 <a href="#foryou" style="color: #15202B; text-decoration: none">为你推荐</a>
 <a href="#events" style="color: #15202B; text-decoration: none">活动站</a>
@@ -1384,5 +1521,6 @@
 
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 <script src="app.js"></script>
+<script src="bookclub-motion.js"></script>
 </body>
 </html>

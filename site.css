@@ -101,6 +101,24 @@ button { cursor: pointer; }
 .bc-session-main { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .bc-session-main h3 { font-size: 20px; font-weight: 700; }
 .bc-session-main .author { font-size: 13px; color: var(--fg-muted); }
+.bc-rw { display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.6; color: var(--fg); }
+.bc-rw span { display: flex; gap: 10px; align-items: baseline; }
+.bc-rw em { flex: 0 0 auto; font-style: normal; font-size: 12px; font-weight: 700; color: var(--ink); padding: 1px 8px; border-radius: 999px; background: var(--ink-tint); }
+
+.bc-act { display: flex; flex-wrap: wrap; gap: 8px 32px; align-items: baseline; padding-top: 24px; }
+.bc-act-no { flex: 0 0 200px; font-size: 13px; font-weight: 700; letter-spacing: 2px; color: var(--amber); }
+.bc-act-text { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.bc-act-text h3 { margin: 0; font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
+.bc-act-span { font-size: 13px; font-weight: 700; color: var(--fg-muted); }
+.bc-act-text p { margin: 0; font-size: 15px; line-height: 1.8; color: var(--fg-soft); max-width: 680px; }
+
+.bc-extra-wrap { display: flex; flex-direction: column; gap: 16px; padding-top: 16px; }
+.bc-head-sm h3 { margin: 0; font-size: 22px; font-weight: 900; }
+.bc-extra { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.bc-extra > div { display: flex; flex-direction: column; gap: 6px; padding: 18px; border: 1px solid var(--line); border-radius: 14px; }
+.bc-extra-type { align-self: flex-start; padding: 2px 8px; border-radius: 999px; background: var(--bg-soft); font-size: 12px; font-weight: 700; color: var(--ink); }
+.bc-extra strong { font-size: 15px; line-height: 1.5; }
+.bc-extra > div > span:last-child { font-size: 13px; line-height: 1.6; color: var(--fg-muted); }
 .bc-session-main p { margin: 0; font-size: 15px; line-height: 1.7; color: var(--fg-soft); }
 .bc-session-main .q { margin-top: 4px; padding: 10px 14px; border-radius: 10px; background: var(--bg-soft); font-size: 14px; color: var(--fg); }
 .bc-footnote { margin: 0; font-size: 13px; color: var(--fg-muted); }

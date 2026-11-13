@@ -1,0 +1,127 @@
+/* 读书会 page, 珊瑚与象牙 palette and motion, layered on site.css. Scoped to the column and its payment dialog. */
+#view-bookclub, .pay-modal {
+  --bg: #FFFBF6; --bg-soft: #F8EDE4; --fg: #33261F; --fg-soft: #5E4F48; --fg-muted: #7A6A62;
+  --ink: #C8705E; --ink-deep: #A9584A; --ink-tint: #FBE7E1; --amber: #B88A5A; --amber-soft: #F2C2A9;
+  --amber-tint: #FBEADF; --line: #EFE2D7; --line-strong: #E3D0C2; --night: #33261F; --night-2: #4A3A35;
+  --band: #4A3A35; --band-fg: #FFF6EF; --band-soft: #E8D6CB; --band-line: #665550; --glow: rgba(255, 214, 190, .55);
+}
+#view-bookclub .bc, #view-bookclub .site-nav { background: var(--bg); }
+.bc-hero { background: var(--bg-soft); }
+.bc-mentor-band { background: var(--band); color: var(--band-fg); }
+.bc-mentor-band .bc-head p, .bc-mentor-name .role { color: var(--band-soft); }
+.bc-profile, .bc-profile div { border-color: var(--band-line); }
+.bc-profile dt, .eyebrow.on-dark { color: var(--amber-soft); }
+.bc-avatar { background: #F4D3C2; }
+.bc-mentor blockquote { border-left-color: var(--amber-soft); }
+.bc-end { background: var(--night); }
+.bc-end-sub { color: var(--band-soft); }
+.bc-shelf { border-bottom-color: var(--night-2); }
+.spine.s1 { background: #C8705E; } .spine.s2 { background: #F4D3C2; color: var(--fg); } .spine.s3 { background: #4A3A35; }
+.spine.s4 { background: #E39E88; color: var(--fg); } .spine.s5 { background: #B88A5A; } .spine.s6 { background: #F7E6DA; color: var(--fg); }
+.spine.s7 { background: #8C5345; } .spine.s8 { background: #DDB59A; color: var(--fg); }
+.btn-amber:hover { background: #F6D2BE; }
+.bc-session-meta .tag { background: var(--amber-tint); color: #8C5A2E; }
+.bc-error { background: #FBE7E1; color: #8C3A2C; }
+.bc-field input:focus, .bc-field select:focus, .bc-field textarea:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 4px var(--ink-tint); }
+.bc-field input, .bc-field select, .bc-field textarea { transition: border-color .3s ease, box-shadow .3s ease; }
+
+/* ---------- motion ---------- */
+
+/* buttons fill softly from the left */
+.btn-ink { background: linear-gradient(90deg, var(--ink-deep) 0 50%, var(--ink) 50% 100%); background-size: 200% 100%; background-position: 100% 0; transition: background-position .5s ease; }
+.btn-ink:hover { background-position: 0 0; }
+.btn-amber { background: linear-gradient(90deg, #FFFFFF 0 50%, var(--amber-soft) 50% 100%); background-size: 200% 100%; background-position: 100% 0; transition: background-position .5s ease; }
+.btn-amber:hover { background-position: 0 0; }
+.btn-line { transition: background .3s ease; } .btn-line:hover { background: var(--ink-tint); }
+
+/* warm light drifting through the hero and the closing band */
+.bc-hero, .bc-end { position: relative; overflow: hidden; }
+.bc-hero::before, .bc-end::before { content: ""; position: absolute; top: -50%; left: -30%; width: 60%; height: 200%; pointer-events: none;
+  background: radial-gradient(closest-side, var(--glow), transparent 70%); animation: drift 18s ease-in-out infinite alternate; }
+.bc-end::before { background: radial-gradient(closest-side, rgba(242, 194, 169, .18), transparent 70%); animation-duration: 22s; }
+.bc-hero-grid, .bc-end-inner { position: relative; }
+@keyframes drift { from { transform: translateX(0); } to { transform: translateX(190%); } }
+
+/* hero copy rises in on load */
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.bc-hero-copy > * { animation: rise .9s cubic-bezier(.2, .7, .2, 1) both; }
+.bc-hero-copy > :nth-child(2) { animation-delay: .12s; } .bc-hero-copy > :nth-child(3) { animation-delay: .26s; } .bc-hero-copy > :nth-child(4) { animation-delay: .4s; }
+
+/* bookshelf: books rise one by one, then one book at a time leans out with its date */
+.bc-shelf .spine { position: relative; transform-origin: bottom; cursor: pointer; animation: grow 1.1s cubic-bezier(.2, .7, .2, 1) backwards; transition: transform .6s cubic-bezier(.2, .7, .2, 1), box-shadow .6s ease; }
+.bc-shelf .spine:nth-child(2) { animation-delay: .08s; } .bc-shelf .spine:nth-child(3) { animation-delay: .16s; } .bc-shelf .spine:nth-child(4) { animation-delay: .24s; }
+.bc-shelf .spine:nth-child(5) { animation-delay: .32s; } .bc-shelf .spine:nth-child(6) { animation-delay: .4s; } .bc-shelf .spine:nth-child(7) { animation-delay: .48s; }
+.bc-shelf .spine:nth-child(8) { animation-delay: .56s; }
+@keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+.bc-shelf .spine.lean { transform: translateY(-14px); box-shadow: inset -4px 0 0 rgba(0,0,0,.12), 0 14px 18px -12px rgba(51, 38, 31, .45); }
+.bc-shelf .spine::after { content: attr(data-tip); writing-mode: horizontal-tb; position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translate(-50%, 4px); white-space: nowrap;
+  padding: 5px 10px; border-radius: 8px; background: var(--night); color: var(--band-fg); font-size: 12px; font-weight: 500; letter-spacing: 0; opacity: 0; pointer-events: none; transition: opacity .5s ease, transform .5s ease; }
+.bc-shelf .spine.lean::after { opacity: 1; transform: translate(-50%, 0); }
+
+/* slow ticker of the season's books under the hero; pauses while pointed at */
+.bc-ticker { overflow: hidden; border-bottom: 1px solid var(--line); background: var(--bg); }
+.bc-ticker-track { display: flex; width: max-content; animation: ticker 70s linear infinite; }
+.bc-ticker:hover .bc-ticker-track { animation-play-state: paused; }
+.bc-ticker-item { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; font-size: 14px; color: var(--fg-soft); white-space: nowrap; }
+.bc-ticker-item b { color: var(--fg); font-weight: 700; }
+.bc-ticker-item::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--ink); opacity: .7; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* content rises in as you reach it */
+.rv { opacity: 0; transform: translateY(16px); transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1); transition-delay: var(--d, 0s); }
+.rv.on { opacity: 1; transform: none; }
+
+/* key phrase in the introduction is underlined in coral as it comes into view */
+.mark { background-image: linear-gradient(var(--amber-soft), var(--amber-soft)); background-repeat: no-repeat; background-position: 0 88%; background-size: 0% 38%; transition: background-size 1.4s .4s ease; color: var(--fg); font-weight: 700; }
+.mark.on { background-size: 100% 38%; }
+
+/* cards lift gently */
+.bc-card, .bc-flow > div, .bc-policy > div, .bc-plan, .bc-paybtn { transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1), box-shadow .4s ease, background .6s ease, border-color .4s ease; }
+.bc-card.on:hover, .bc-policy > div.on:hover, .bc-plan.on:hover, .bc-paybtn.on:hover { transform: translateY(-4px); box-shadow: 0 16px 28px -20px rgba(120, 60, 40, .55); }
+
+/* mentor quote bar grows when the band arrives */
+.bc-mentor blockquote { border-left: none; position: relative; }
+.bc-mentor blockquote::before { content: ""; position: absolute; left: 0; top: 0; width: 3px; height: 100%; border-radius: 2px; background: var(--amber-soft); transform: scaleY(0); transform-origin: top; transition: transform 1.2s .3s ease; }
+.bc-mentor.on blockquote::before { transform: scaleY(1); }
+
+/* syllabus: a coral marker eases from session to session; clicking a session holds it there */
+.bc-syllabus li { position: relative; cursor: pointer; padding-left: 20px; padding-right: 12px; border-radius: 4px; }
+.bc-syllabus li::before { content: ""; position: absolute; left: 0; top: 24px; bottom: 24px; width: 3px; border-radius: 2px; background: var(--ink); transform: scaleY(0); transition: transform .8s cubic-bezier(.2, .7, .2, 1); }
+.bc-syllabus li.lit { background: linear-gradient(90deg, var(--ink-tint), rgba(251, 231, 225, 0) 70%); }
+.bc-syllabus li { transition: opacity .9s ease, transform .9s cubic-bezier(.2, .7, .2, 1), background .8s ease; }
+.bc-syllabus li.lit::before { transform: scaleY(1); }
+.bc-syllabus li.lit h3 { color: var(--ink-deep); }
+.bc-syllabus li h3 { transition: color .6s ease; }
+.bc-syllabus li.lit .q { background: #FFFFFF; box-shadow: 0 8px 20px -16px rgba(120, 60, 40, .6); }
+.bc-syllabus .q { transition: background .6s ease, box-shadow .6s ease; }
+.bc-syllabus li.held .bc-session-meta .no::after { content: "已停留"; margin-left: 8px; padding: 1px 8px; border-radius: 999px; background: var(--ink); color: #FFFFFF; font-size: 11px; font-weight: 500; }
+
+/* session flow: a thread draws across and each step warms in turn */
+.bc-flow { position: relative; padding-top: 14px; }
+.bc-flow::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; border-radius: 1px; background: var(--line-strong); }
+.bc-flow::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; border-radius: 1px; background: var(--ink); transform-origin: left; transform: scaleX(var(--p, 0)); transition: transform 2s ease; }
+.bc-flow > div.lit { background: var(--ink-tint); box-shadow: inset 0 0 0 1px rgba(200, 112, 94, .45); }
+.bc-flow > div h3 { transition: color .6s ease; } .bc-flow > div.lit h3 { color: var(--ink-deep); }
+
+/* chosen plan: a slowly moving coral border */
+.bc-plan:has(input:checked) { border-color: transparent;
+  background: linear-gradient(var(--ink-tint), var(--ink-tint)) padding-box, linear-gradient(90deg, var(--ink), var(--amber-soft), var(--amber), var(--ink)) border-box;
+  background-size: 100% 100%, 300% 100%; animation: edge 8s linear infinite; }
+@keyframes edge { from { background-position: 0 0, 0 0; } to { background-position: 0 0, 300% 0; } }
+.bc-total strong { font-variant-numeric: tabular-nums; }
+
+/* FAQ answers ease open */
+.bc-faq summary { transition: color .3s ease; } .bc-faq summary:hover { color: var(--ink-deep); }
+.bc-faq details[open] p { animation: rise .5s ease both; }
+
+/* payment dialog settles in */
+.pay-modal:not([hidden]) { animation: fade .35s ease both; }
+.pay-modal:not([hidden]) .pay-dialog { animation: rise .45s cubic-bezier(.2, .7, .2, 1) both; }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  #view-bookclub *, #view-bookclub *::before, #view-bookclub *::after, .pay-modal, .pay-modal * { animation: none !important; transition: none !important; }
+  .rv { opacity: 1; transform: none; }
+  .mark { background-size: 100% 38%; }
+  .bc-ticker { overflow-x: auto; }
+}

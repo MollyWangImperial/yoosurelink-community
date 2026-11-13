@@ -135,7 +135,7 @@
 
   // ---- 读书会 sign-up and payment ----
   var form = document.getElementById('bc-form');
-  var PLAN_LABEL = { single: '单期体验', season: '整季 8 期', member: '会员整季' };
+  var PLAN_LABEL = { single: '单场体验', season: '全程 18 场', member: '会员全程' };
   var PAY_LABEL = { wechat: '微信支付', alipay: '支付宝', bank: '银行转账', intl: '海外支付' };
 
   function selected(name) { var el = form.querySelector('input[name="' + name + '"]:checked'); return el ? el : null; }
