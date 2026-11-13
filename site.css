@@ -55,10 +55,6 @@ button { cursor: pointer; }
 .bc-hero-copy { flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
 .bc-hero h1 { font-size: 52px; line-height: 1.15; font-weight: 900; letter-spacing: -1px; }
 .bc .lead { margin: 0; font-size: 18px; line-height: 1.7; color: var(--fg-soft); max-width: 580px; }.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
-.bc-facts { margin: 8px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; padding-top: 20px; border-top: 1px solid var(--line); }
-.bc-facts div { display: flex; flex-direction: column; gap: 4px; }
-.bc-facts dt { font-size: 24px; font-weight: 900; color: var(--ink); }
-.bc-facts dd { margin: 0; font-size: 13px; color: var(--fg-muted); }
 
 .bc-shelf { flex: 1 1 360px; min-width: 0; height: 340px; display: flex; align-items: flex-end; justify-content: center; gap: 6px; padding: 0 12px; border-bottom: 10px solid var(--night); }
 .spine { writing-mode: vertical-rl; display: flex; align-items: center; justify-content: flex-start; padding: 16px 0; width: 44px; border-radius: 4px 4px 0 0; font-size: 15px; font-weight: 700; letter-spacing: 3px; color: #FFFFFF; box-sizing: border-box; box-shadow: inset -4px 0 0 rgba(0,0,0,.12); }
@@ -95,9 +91,6 @@ button { cursor: pointer; }
 .bc-profile div { display: flex; flex-wrap: wrap; gap: 6px 24px; padding: 14px 0; border-bottom: 1px solid #3F7A89; }
 .bc-profile dt { flex: 0 0 96px; font-size: 14px; font-weight: 700; color: var(--amber-soft); }
 .bc-profile dd { flex: 1 1 260px; margin: 0; font-size: 15px; line-height: 1.6; }
-.bc-mentor-note { padding: 24px; border-radius: 16px; background: var(--ink-deep); display: flex; flex-direction: column; gap: 10px; }
-.bc-mentor-note h3 { font-size: 18px; font-weight: 700; }
-.bc-mentor-note p { margin: 0; font-size: 14px; line-height: 1.8; color: #D6E2E4; }
 
 .bc-syllabus { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid var(--line); }
 .bc-syllabus li { display: flex; flex-wrap: wrap; gap: 8px 32px; padding: 24px 0; border-bottom: 1px solid var(--line); }
@@ -209,7 +202,6 @@ button { cursor: pointer; }
   .bc-hero h1 { font-size: 36px; }
   .bc-head h2 { font-size: 28px; }
   .bc-block { padding-top: 56px; padding-bottom: 56px; }
-  .bc-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .bc-shelf { height: 240px; gap: 4px; padding: 0; }
   .spine { width: 34px; font-size: 12px; letter-spacing: 1px; padding: 10px 0; }
   .spine.s1 { height: 180px; } .spine.s2 { height: 220px; } .spine.s3 { height: 150px; } .spine.s4 { height: 200px; }
